@@ -442,502 +442,533 @@ void main() {
   // x = y > 0 ? 100 : -100;
   // print(x);
 //*********************************************************************************************************
-  /*
+// OOP --> object oriented programming
+
+// ignore_for_file: unused_field, unused_local_variable
+
+// import 'human.dart';
+
+// void main() {
+/*
   ===================================================================================
-  ================================= Object and classes ========================================
-  ===================================================================================
-*/
-/**
- * To Take Object From Class 
- * name of class Nameofobject(you choose)=classname(); 
- */
-//   Human adham = Human();
-//   adham.haircolor = 'black';
-//   adham.hight = 170;
-//   adham.weight = 65;
-//   print(adham.NumberOfArms);
-//   print(adham.haircolor);
-//   print(adham.hight);
-//   print(adham.weight);
-//   Human mohamed = Human();
-//   mohamed.haircolor = 'brown';
-//   mohamed.hight = 180;
-//   mohamed.weight = 75;
-//   print(mohamed.NumberOfArms);
-//   print(mohamed.haircolor);
-//   print(mohamed.hight);
-//   print(mohamed.weight);
-//   class Human {
-//   int NumberOfArms = 2;
-//   double? hight;
-//   double? weight;
-//   String? haircolor;
-// }
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= constructor ========================================
+  ============================= 40.classes and objects ================================
   ===================================================================================
 */
-/**
- * constructor will be executed at the creation of object
- * constructor with parameters 
- * constructor without parameters
- * This keyword is used to know the difference between paramter of function and attribute of class
- * we can use named paramters here too
- */
-  // human mydefault = human(Name: 'adham', age: 22, Education: 'BFCAI');
-  // print(mydefault.Education);
-  // print(mydefault.Name);
-  // print(mydefault.age);
-  // class human {
-//   String? Name;
-//   int? age;
-//   String? Education;
-//   // human() {
-  //   Name = "adham";
-  //   age = 22;
-  //   Education = "BFCAI";
-  // }
-  // human({String? Name, int? age, String? Education}) {
-  //   this.Name = Name;
-  //   this.age = age;
-  //   this.Education = Education;
-  // }
-// }
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= Methods in flutter ========================================
-  ===================================================================================
-*/
-/**
- * 
- */
-//   human adham = human();
-//   adham.dispaly();
-//   class human {
-//   String? Name = 'adham';
-//   int? age;
-//   //method
-//   void dispaly() {
-//     print("I can walk");
-//   }
-// }
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= Encapsulation ========================================
-  ===================================================================================
-*/
-/**
- * use _ to make it private but we can use it at any part of the same file
- * if we import it from another file then we can't use it 
- */
-  // import 'human.dart';
-  // human adham = human();
-  // adham.set_login('adham', '1234');
-  // print("your Username is: ");
-  // print(adham.returnusername());
-  // print("your Password Is: ");
-  // print(adham.returnusername());
-  //make file called human.dart and import it in the header
-  // class human {
-  // String? _username;
-  // String? _Password;
-  // void set_login(String username, String password) {
-  //   this._username = username;
-  //   this._Password = password;
+  // Human ahmed = Human();
+  // ahmed.weight = 80;
+  // ahmed.height = 181;
+  // ahmed.NumOfArms = 2;
+  // ahmed.hairColor = 'brown';
+
+  // print(ahmed.height);
+
+  // class Human {
+  // //! Attributes
+  // double? height;
+  // double? weight;
+  // String? hairColor;
+  // int NumOfArms = 2;
   // }
 
-  // returnusername() {
-  //   return this._username;
-  // }
-
-  // returnpassword() {
-  //   return this._Password;
-  // }
-// }
-
-//*********************************************************************************************************
   /*
   ===================================================================================
-  ================================= Setter and getter ========================================
+  ============================= 41.constructor ================================
   ===================================================================================
 */
-/**
- * set name of attribute () { code for set value}
- * get name of attribue {return attribute value}
- * we cannot use ? with private attribute set , get
- */
-//   human adham = human();
-//   adham.numberofarms = 2;
-//   print(adham.numberofarms);
-//   class human {
-//   int _numberofarms = 0;
-//   double? height;
-//   double? weight;
-//   String? haircolor;
 
-//   set numberofarms(int numberofarms) {
-//     if (numberofarms <= 2) this._numberofarms = numberofarms;
-//   }
+  // Human ahmed = Human('black', 180, 80);
 
-//   int get numberofarms {
-//     return this._numberofarms;
-//   }
-// }
+  // print(ahmed.height);
 
-//*********************************************************************************************************
+  // class Human {
+  // //Attributes
+  // double? height;
+  // double? weight;
+  // String? hairColor;
+  // int NumOfArms = 2;
+
+  // //! any function inside a class called a method
+  //   Human(String hairColor, double height, double weight) //! constructor
+  //   {
+  //     this.hairColor = hairColor;
+  //     this.height = height;
+  //     this.weight = weight;
+  //     this.NumOfArms = NumOfArms;
+  //   }
+  // }
   /*
   ===================================================================================
-  ================================= Exceptions ========================================
+  ============================= 42.Methods in flutter ================================
   ===================================================================================
-*/
-/**
- * problem happen at the runtime 
- */
-  // List<int> numbers = [1, 2, 3, 4];
+  */
+  // any function inside a class
+
+  // Human ahmed = Human('black', 180, 80);
+  // ahmed.walk();
+
+  // class Human {
+  // //Attributes
+  // double? height;
+  // double? weight;
+  // String? hairColor;
+  // int NumOfArms = 2;
+
+  // //any function inside a class called a //* method
+  // Human(String hairColor, double height, double weight) //! constructor
+  // {
+  //   this.hairColor = hairColor;
+  //   this.height = height;
+  //   this.weight = weight;
+  //   this.NumOfArms = NumOfArms;
+  // }
+
+  // void walk() {
+  //   print('this human is walking');
+  // }
+  // }
+
+  /*
+  ===================================================================================
+  ============================= 43.Encapsulation ================================
+  ===================================================================================
+  */
+  // when putting a ( _ ) before a variable the variable access within the file.
+  // Human ahmed = Human('black', 180, 80);
+
+  // ahmed.setNumOfArms(-1);
+  // print(ahmed.getNumOfArms());
+
+  /*
+  ===================================================================================
+  ============================= 44.Setter & Getter ================================
+  ===================================================================================
+  */
+  // set and get keywords in human.dart
+  // Human ahmed = Human('black', 180, 80);
+  // ahmed.NumberOfArms = 1;
+  // print(ahmed.NumberOfArms);
+
+  /*
+  ===================================================================================
+  ============================= 45.Exception ================================
+  ===================================================================================
+  */
+  //using try and catch to print a error statement
+  //because exception error stops the program.
+
+  // List<int> numbers = [1, 2, 3, 4, 5];
+
   // try {
-  //   // print(numbers[50]);
-  //   // print(11 ~/ 2);
-  //   // print(1 ~/ 0);
-  // } on IntegerDivisionByZeroException {
-  //   print('Integer Division By Zero'); //make your message error
-  // } catch (ex) {
-  //   print(ex);
+  //   print(numbers[20]);
+  // } catch (value) {
+  //   print(value);
   // }
 
-  // print('adham');
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= Throw exceptions ========================================
-  ===================================================================================
-*/
-/**
- * 
- */
-  // else {
-  //   Exception exception=Exception('wrong Number not in range  0-2');
-  //   throw Exception;
-  //another way with anonymous object
-  // throw Exception('wrong Number not in range  0-2');
+  // if i need add a error statement
+  // try {
+  //   print(numbers[20]);
+  // } on [error statement from catch terminal] {
+  //   print('OutOfRange');
   // }
-//*********************************************************************************************************
+
   /*
   ===================================================================================
-  ================================= Anonymous objects ========================================
+  ============================= 46.Throw Exception ================================
   ===================================================================================
-*/
-/**
- * object that has no name as i don't need it 
- */
-// class human {
-//   String? Name = 'adham';
-//   int? age;
-//   //method
-//   void dispaly() {
-//     print("I can walk");
-//   }
+  */
+  // in human.dart file
+  // Human ahmed = Human('black', 180, 80);
+  // ahmed.NumberOfArms = 5;
+  // print(ahmed.NumberOfArms);
 
-//   human(String Name, int age) {
-//     this.Name = Name;
-//     this.age = age;
-//     print("Good Bye");
-//   }
-// }
-
-//   human('adham', 25);
-//*********************************************************************************************************
   /*
   ===================================================================================
-  ================================= inheritance ========================================
+  ============================= 47.Anonymous Objects ================================
   ===================================================================================
-*/
-/**
- * 
- */
-  // lion scar = lion();
+  */
+  // Human('black', 180, 80); // right statement (anonymous object)
+  // throw Exception('message');
+
+  // instead of
+  // Exception exception = Exception('Wrong Number');
+  // throw exception;
+
+  /*
+  ===================================================================================
+  ============================= 48.inhertiance ================================
+  ===================================================================================
+  */
+  //   Lion scar = Lion();
+  //   Dog jack = Dog();
+
+  //   scar.eat();
+  //   jack.eat();
+  // }
+
+  // class Animal {
+  //   int NumberOfLimbs = 4;
+
+  //   void eat() {
+  //     print('eating');
+  //   }
+  // }
+
+  // class Lion extends Animal {
+  //   void Roar() {
+  //     print('roaring');
+  //   }
+  // }
+
+  // class Dog extends Animal {
+  //   // when i need to override a method from the parent class
+  //   // using @override
+  //   @override
+  //   void eat() {
+  //     print('dog eating');
+  //   }
+
+  //   void park() {
+  //     print('park');
+  //   }
+  /*
+  ===================================================================================
+  ============================= 50.Polymorphism ================================
+  ===================================================================================
+  */
+  // Lion scar = Lion();
   // Dog jack = Dog();
-  // scar.eat();
-  // jack.eat();
-//   class animal {
-//   int numberoflibs = 4;
-//   void eat() {
-//     print('eating');
-//   }
-// }
 
-// class lion extends animal {
-//   void roar() {
-//     print('roaring');
-//   }
-// }
+  // List<Animal> animals = [scar, jack];
+  // //! i can't
+  // //! List<Dog> animals = [scar, jack]; --> [scar error]
 
-// class Dog extends animal {
-//   void park() {
-//     print('parking');
-//   }
-// }
+  //   class Animal {
+  //   int NumberOfLimbs = 4;
 
-//*********************************************************************************************************
+  //   void eat() {
+  //     print('eating');
+  //   }
+  // }
+
+  // class Lion extends Animal {
+  //   void Roar() {
+  //     print('roaring');
+  //   }
+  // }
+
+  // class Dog extends Animal {
+  //   @override
+  //   void eat() {
+  //     print('dog eating');
+  //   }
+
+  //   void park() {
+  //     print('park');
+  //   }
+  // }
   /*
   ===================================================================================
-  ================================= Override ========================================
+  ============================= 51.Abstract Classes ================================
   ===================================================================================
-*/
-/**
- * we cannot write @overide keyword
- */
-  // lion scar = lion();
-  // Dog jack = Dog();
-  // scar.eat();
-  // jack.eat();
-// class animal {
-//   int numberoflibs = 4;
-//   void eat() {
-//     print('eating');
-//   }
-// }
+  */
+  //1-if i need to remember each class that extends the parent class to override a method
+  //  putting abstract before class of parent.
+  //2-i can't create a object(instance) of abstract class
 
-// class lion extends animal {
-//   @override
-//   void eat() {
-//     print('Lion Eating');
-//   }
+  //   abstract class Animal {
+  //   int NumberOfLimbs = 4;
 
-//   void roar() {
-//     print('roaring');
-//   }
-// }
+  //   void eat();
+  // }
 
-// class Dog extends animal {
-//   void park() {
-//     print('parking');
-//   }
-// }
-//*********************************************************************************************************
+  // class Lion extends Animal {
+  //   void Roar() {
+  //     print('roaring');
+  //   }
+
+  //   @override
+  //   void eat() {
+  //     print('lion is eating');
+  //   }
+  // }
+
+  // class Dog extends Animal {
+  //   @override
+  //   void eat() {
+  //     print('dog eating');
+  //   }
+
+  //   void park() {
+  //     print('park');
+  //   }
+  // }
   /*
   ===================================================================================
-  ================================= Polymorphism ========================================
+  ============================= 52.Interfaces ================================
   ===================================================================================
-*/
-/**
- * that mean one class have many other types 
- */
+  */
+  // any class called interface whereas the class is abstract or not
+  // by putting implements 'after' class instead of 'extends'
+  // by forcing a everything to override like methods, attributes etc...
 
-  // programmer adham = programmer();
-  // Frontend ahmed = Frontend();
-  // List<human> jobs = [adham, ahmed];
-  // List<human> jobs2 = [programmer(), Frontend()]; //we can use anonymous object
-  // print(jobs[0].x);
-  // print(jobs2[0].x);
-  // class human {int x = 5;}
-  // class programmer extends human {}
-  // class Frontend extends human {}
+  //   class Animal {
+  //   int NumberOfLimbs = 4;
 
-//*********************************************************************************************************
+  // }
+
+  // class Lion extends Animal {
+  //   void Roar() {
+  //     print('roaring');
+  //   }
+
+  //   @override
+  //   void eat() {
+  //     print('lion is eating');
+  //   }
+  // }
+
+  // class Dog extends Animal {
+  //   @override
+  //   void eat() {
+  //     print('dog eating');
+  //   }
+
+  //   void park() {
+  //     print('park');
+  //   }
+  // }
+
+  // class AnimalImplements implements Animal{
+  //   @override
+  //   late int NumberOfLimbs;
+
+  // }
   /*
   ===================================================================================
-  ================================= Abstract classes ========================================
+  ============================= 53.nested inhertiance ================================
   ===================================================================================
-*/
-/**
- * many override problem
- * methods have no implementation 
- * methods have implementation
- * abstract class can't not create object from it
- */
-//   lion scar = lion();
-//   Dog jack = Dog();
-//   scar.eat();
-//   jack.eat();
-//   abstract class animal {
-//   int numberoflibs = 4;
-//   void eat();
-// }
+  */
+  // when i have a parent class 'A' and class 'B'
+  // and class 'D' inherent 'B'
+  // then class 'D' also inherent 'A'
+  // THIS CALLED NESTED INHERTIANCE
 
-// class lion extends animal {
-//   @override
-//   void roar() {
-//     print('roaring');
-//   }
+  // GermanDogs jack = GermanDogs();
+  // jack.someMethods();
 
-//   @override
-//   void eat() {
-//     // TODO: implement eat
-//     print("Lion is eating");
-//   }
-// }
-  print('hello world');
+  //   class Animal {
+  //   int NumberOfLimbs = 4;
+  //   void eat() {
+  //     print('eating');
+  //   }
 
-// class Dog extends animal {
-//   void park() {
-//     print('parking');
-//   }
+  //   void someMethods() {}
+  // }
 
-//   @override
-//   void eat() {
-//     print('Dog Is eating');
-//   }
-// }
-//*********************************************************************************************************
+  // class Lion extends Animal {
+  //   void Roar() {
+  //     print('roaring');
+  //   }
+
+  //   @override
+  //   void eat() {
+  //     print('lion is eating');
+  //   }
+  // }
+
+  // class Dog extends Animal {
+  //   @override
+  //   void eat() {
+  //     print('dog eating');
+  //   }
+
+  //   void park() {
+  //     print('park');
+  //   }
+  // }
+
+  // class GermanDogs extends Dog {}
+
   /*
   ===================================================================================
-  ================================= Interfaces ========================================
+  ============================= 54.Super Constructor ================================
   ===================================================================================
-*/
-/**
- * you must do override for everything 
- */
-  // lion scar = lion();
-  // Dog jack = Dog();
-  // scar.eat();
-  // jack.eat();
-  // abstract class animal {
-//   int numberoflibs = 4;
-//   void eat();
-//   void somemethod() {}
-// }
+  */
+  // by using ': super'
+  // accessing attributes of parent constructor
 
-// class lion implements animal {
-//   void roar() {
-//     print('roaring');
-//   }
+  //   FootballPlayer ahmed = FootballPlayer(
+  //       speed: 10, numberOfGoals: 100, hairColor: 'black', height: 180);
+  //   print(ahmed.hairColor);
+  //   print(ahmed.height);
 
-//   @override
-//   void eat() {
-//     print("Lion is eating");
-//   }
+  //   class Human2 {
+  //   String? hairColor;
+  //   double? height;
+  //   double? width;
 
-//   @override
-//   int numberoflibs = 4;
+  //   Human2({this.hairColor, this.height});
+  // }
 
-//   @override
-//   void somemethod() {}
-// }
+  // class FootballPlayer extends Human2 {
+  //   int? speed;
+  //   int? numberOfGoals;
 
-// class Dog extends animal {
-//   void park() {
-//     print('parking');
-//   }
+  //   FootballPlayer(
+  //       {this.numberOfGoals, this.speed, String? hairColor, double? height})
+  //       : super(hairColor: hairColor, height: height);
 
-//   @override
-//   void eat() {
-//     print('Dog Is eating');
-//   }
-// }
-//*********************************************************************************************************
+  //   //! FootballPlayer({this.numberOfGoals, this.speed, String? hairColor}) {
+  //   //!   this.hairColor = hairColor;
+  //   //! }
+
+  //   void run() {
+  //     print('player is running');
+  //   }
   /*
   ===================================================================================
-  ================================= Nested Inheritance ========================================
+  ============================= 55.Named Constructor ================================
   ===================================================================================
-*/
-/**
- * 
- */
+  */
+  // when i need to create another constructor with another initializations
 
-// class animal {
-//   int numberoflibs = 4;
-//   void eat() {
-//     print('eating');
-//   }
-// }
+  // Student ahmed = Student(age: 21, upToNextLevel: true);
+  // Student Mohamed = Student.failed(age: 21);
 
-// class lion extends animal {
-//   void roar() {
-//     print('roaring');
-//   }
-// }
+  // print(Mohamed.upToNextLevel);
 
-// class Dog extends animal {
-//   void park() {
-//     print('parking');
-//   }
-// }
+  // class Student {
+  // int? age;
+  // bool? upToNextLevel;
 
-// class GermanDogs extends Dog {}
-//*********************************************************************************************************
+  // Student({this.age, this.upToNextLevel});
+
+  // Student.failed({this.age, this.upToNextLevel}) {
+  //   upToNextLevel = false;
+  // }
   /*
   ===================================================================================
-  ================================= Super constructor ========================================
+  ============================= 56.Object Class ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+  // by default any class inherent from Object Class
+  // so that when we use '.' with a object from a empty class i can use many things
+  // where the class is empty like toString(), runtimeType()
+
+  // Student ahmed = Student();
+  // ahmed.toString();
+
+  // class Student {}
   /*
   ===================================================================================
-  ================================= Named constructor ========================================
+  ============================= 57.Mixins ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+  // there is no multiple inheritance in dart
+  // i can't take a object from a mixins
+  // like Medical ahmed = Medical();
+  // i can take more than one mixins like Medical2
+  // priority from the last inhereted mixin
+
+  // Nurse sara = Nurse();
+  // print(sara.TakeTemperature());
+
+  //   class Employee {
+  //   void RecordAttendance() {}
+  // }
+
+  // class Nurse extends Employee with Medical, Medical2 {}
+
+  // //! class Nurse extends Employee with Medical2, Medical {}
+
+  // class Doctor extends Employee with Medical {}
+
+  // class itEngineer extends Employee {}
+
+  // mixin Medical {
+  //   int TakeTemperature() {
+  //     return 0;
+  //   }
+  // }
+
+  // mixin Medical2 {
+  //   int TakeTemperature() {
+  //     return 20;
+  //   }
+  // }
+
   /*
   ===================================================================================
-  ================================= Object Class ========================================
+  ============================= 58.Static Keyword ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+  // we use static keyword to make a variable static whole the code ثابت
+  // and i can access from a class name not the object like (ahmed, tharwat)
+  // ex. get number of views, visits
+
+  // Human ahmed = Human(hairColor: 'black');
+  // Human tharwat = Human(hairColor: 'brown');
+
+  // print(Human.NumberOfObjects);
+
   /*
   ===================================================================================
-  ================================= Mixins ========================================
+  ============================= 59.Static Keyword with Methods ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+
+  // Human ahmed = Human(hairColor: 'black');
+  // Human tharwat = Human(hairColor: 'brown');
+  // Human Obj = Human(hairColor: 'red');
+
+  // Human.PrintNumberOfObjects();
+
   /*
   ===================================================================================
-  ================================= static keyword ========================================
+  ============================= 60.Encapsulation part2 ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+  // i can also use a private att. in constructor
+  // and when we intialize object we can put a value to this private att. once.
+  // like below
+
+  // Human ahmed = Human(4);
+  // ahmed._NumOfArms = 5; // --> i can't use _NumOfArms again.
   /*
   ===================================================================================
-  ================================= static keyword part 2 ========================================
+  ============================= 61.cascade operator ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
+  */
+  // by using ..
+  // used when calling more than one method in one line
+
+  // Human ahmed = Human(hairColor: 'black');
+  // ahmed
+  //   ..walk()
+  //   ..run();
+
+  // another ex.
+  // String Name = 'ahmed';
+  // Name
+  //   ..toUpperCase()
+  //   ..toString()
+  //   ..length;
+
   /*
   ===================================================================================
-  ================================= Encapsulation part 2 ========================================
+  ============================= 62.final and const ================================
   ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= Cascade operator ========================================
-  ===================================================================================
-*/
-/**
- * 
- */
-//*********************************************************************************************************
-  /*
-  ===================================================================================
-  ================================= Final and Const ========================================
-  ===================================================================================
-*/
-/**
- * 
- */
-//**********************************************************************************************************
-}
+  */
+  // when we put final before datatype we make the variable's value final مش بتتغير
+  // consumed in run time
+  // ex
+  // final double pi = 3.14;
+  // pi = 5;
+  // print(pi);
+
+  // const is the same use of final
+  // consumed in compile time
+  // const double pi = 3.14;
+  // pi = 3.14;
+  // print(pi);
+
